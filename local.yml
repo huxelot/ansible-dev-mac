@@ -2,6 +2,7 @@
   connection: local
   become: true
 
-  roles:
-    - role: gantsign.visual-studio-code
-
+- name: Install cask
+  community.general.homebrew_cask:
+    name: tmux
+    state: present
