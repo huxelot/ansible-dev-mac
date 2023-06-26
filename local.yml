@@ -2,7 +2,8 @@
   connection: local
   become: true
 
-- name: Install cask
-  community.general.homebrew_cask:
-    name: tmux
-    state: present
+  tasks:
+    - name: Install cask
+      community.general.homebrew_cask:
+        name: tmux
+        state: present
