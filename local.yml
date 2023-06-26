@@ -2,9 +2,6 @@
   connection: local
   become: true
 
-  tasks:
-    - name: Install Google Chrome
-      homebrew_cask:
-        name: google-chrome
-        state: present
+  roles:
+    - role: gantsign.visual-studio-code
 
